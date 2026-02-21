@@ -1,51 +1,129 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF5E6; 
+    padding-bottom: 400px; 
 }
 
 header {
-    background-color: #003366;
-    padding: 20px;
+    background-color: #d3d3d3;
+    padding: 10px 20px 30px 20px;
 }
 
-nav {
-    background-color: #00509e;
-    padding: 10px;
-}
-
-main {
-    background-color: #f6ebeb;
-    font-size: 18px;
-    color: #333333;
-    padding: 20px;
-    min-height: 300px;
-}
-
-footer {
-    background-color: #003366;
-    padding: 10px;
-    text-align: center;
-    color: #ffffff;
-}
-
-li {
+.skip-link {
     display: inline-block;
-    width: 150px;
-    text-align: center;
+    color: #0000EE;
+    text-decoration: underline;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px; 
+}
+
+nav a {
+    color: #4b0082;
+    text-decoration: underline;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.header-img {
+    max-width: 120px; 
+    height: auto;
+    border-radius: 5px;
 }
 
 h1 {
     text-align: center;
-    font-family: 'Verdana', serif;
-    color: #ffffff;
+    font-family: 'Brush Script MT', 'Comic Sans MS', cursive;
+    color: #000080;
+    font-size: 3.5em;
+    margin: 0;
 }
 
-p {
-    line-height: 1.6;
+main {
+    background-color: #ffff00; 
+    padding: 15px 0; 
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
+.text-content {
+    background-color: #ffffff; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.gallery-row {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 15px;
+    max-width: 1000px; 
+    margin-left: auto;  
+    margin-right: auto; 
+    padding: 0 15px;    
+}
+
+.gallery-row:last-child {
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row-5 { grid-template-columns: repeat(5, 1fr); }
+.row-4 { grid-template-columns: repeat(4, 1fr); }
+
+.gallery-row img {
+    width: 100%;
+    height: 300px; 
+    object-fit: cover; 
+    display: block;
+    border: 1px solid #ccc;
+}
+
+.flex-gallery {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex-gallery img {
+    width: 300px; 
+    height: 250px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #d3d3d3;
+    padding: 20px;
+    font-size: 1.1em;
+    color: #000;
+    text-align: left;
 }
