@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Bài tập 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js"></script>
+</head>
+
+<body onload="addTabIndex()">
+    
+    <header>
+        <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
+        <div class="header-top">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Trang Chủ</a></li>
+                    <li><a href="qua1.html">Dâu Tây 1</a></li>
+                    <li><a href="qua2.html">Dâu Tây 2</a></li>
+                </ul>
+            </nav>
+            <img src="images/anh1.jpg" alt="Hình ảnh trái cây" class="header-img">
+        </div>
+        <h1>Trang web của tôi</h1>
+    </header>
+
+    <main id="main-content">
+        <div class="text-content">
+            <h2>Chào mừng bạn đến với Thế Giới Hoa Quả!</h2>
+            <p>Hãy nhấn vào menu <strong>Dâu Tây 1</strong> để xem giao diện sử dụng lưới (Grid), hoặc nhấn vào <strong>Dâu Tây 2</strong> để xem giao diện sử dụng Flexbox nhé.</p>
+        </div>
+
+        <hr>
+        <h3 style="text-align: center;">Thư viện ảnh tương tác</h3>
+
+        <div id="image">
+            Hover over an image below to display here.
+        </div>
+        
+        <img class="preview" alt="Dâu tây loại 1" src="images/anh1.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" alt="Dâu tây loại 2" src="images/anh2.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" alt="Dâu tây loại 3" src="images/anh3.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" alt="Dâu tây loại 4" src="images/anh4.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" alt="Dâu tây loại 5" src="images/anh5.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img class="preview" alt="Dâu tây loại 6" src="images/anh6.jpg" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+
+    </main>
+</body>
+</html>
